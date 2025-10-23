@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f8fb;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  background: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+section {
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+/* Adjusted input styling for password toggle buttons */
+form input:not([type="button"]):not([type="submit"]):not([type="reset"]), textarea, select {
+  margin: 8px 0;
+  padding: 8px;
+  width: 95%;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="checkbox"], input[type="radio"] {
+  width: auto;
+}
+input[type="submit"], input[type="reset"], input[type="button"], .add-subject-btn {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.add-subject-btn:hover {
+  background: #0056b3;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+.success-msg {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.subject-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.subject-entry input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+.remove-subject-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.remove-subject-btn:hover {
+    background: #c82333;
+}
